@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ComplieMain",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g", "main.cpp", "-o", "out.o"
+            ]
+        },
+        {
+            "label": "RunMain",
+            "type": "shell",
+            "command": "./out.o"
+        }
+    ]
+}
